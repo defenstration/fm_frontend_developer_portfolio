@@ -28,7 +28,16 @@
     --fw-normal: 400;
     --fw-bold: 500;
 
-    /* */
+    /* Character Spacing */
+    --cs-1: -2.5px
+    --cs-2: -1.5px
+
+    /* Line Height */
+    --lh-1: 88px;
+    --lh-2: 56px;
+    --lh-3: 32px;
+    --lh-4: 28px;
+
 
 }
 
@@ -59,8 +68,7 @@ header, footer, main, section, article {
 
 body {
     font-family: var(--ff-space-grotesk);
-    width: 100%;
-    min-width: 20rem;
+    width: clamp(375px, 100%, 1440px);
     background-color:  hsl(var(--clr-black));
     line-height: 150%;
     letter-spacing: 0px;
@@ -119,6 +127,8 @@ img {
 /*--------------------------------*/
 /* Styling                        */
 /*--------------------------------*/
+
+
 
 
 /*--------------------------------*/
